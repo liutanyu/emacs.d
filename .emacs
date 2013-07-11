@@ -6,6 +6,9 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
+(autoload 'cuda-mode "cuda-mode.el")
+(add-to-list 'auto-mode-alist '("\\.cu\\'" . cuda-mode))
+
 (require 'parenface)
 (set-face-foreground 'paren-face "DimGray")
 
